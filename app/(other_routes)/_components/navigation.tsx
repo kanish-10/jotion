@@ -5,6 +5,7 @@ import { ElementRef, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import UserItem from "@/app/(other_routes)/_components/user-item";
 
 export default function Navigation() {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -106,7 +107,7 @@ export default function Navigation() {
           <ChevronsLeft className="h-6 w-6" />
         </div>
         <div>
-          <p>Action Items</p>
+          <UserItem />
         </div>
         <div className="mt-4">
           <p>Documents</p>
